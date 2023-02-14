@@ -29,4 +29,8 @@ class ApplicationController < ActionController::Base
     }
     cookies[:cart]
   end
+
+  def authenticate
+    http_basic_authenticate_or_request_with( name: ENV['ADMIN_NAME'], password: ENV['ADMIN_PASS'])
+  end
 end
