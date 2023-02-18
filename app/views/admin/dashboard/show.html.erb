@@ -1,3 +1,20 @@
 <h1>Admin Dashboard</h1>
 <h2>Merchandise Statistics</h2>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td>Product Count</td>
+        <td><%= @product_count %></td>
+      </tr>
+      <tr>
+        <td>Category Count</td>
+        <td><%= @category_count %></td>
+      </tr>
+    </tbody>
+  </table>
