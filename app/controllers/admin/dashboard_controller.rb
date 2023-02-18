@@ -1,6 +1,6 @@
 class Admin::DashboardController < ApplicationController
   
-  efore_action :authenticate
+  before_action :authenticate
 
   def show
     @product_count = Product.count
